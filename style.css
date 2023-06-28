@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:ital,wght@1,300&family=Ysabeau+Infant:ital,wght@1,1;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* ------------ Theme Container ---------------*/
+.outer {
+  text-align: center;
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  width: 60px;
+  border-radius: 20px;
+  background-color: #dedfe0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  padding: 3px;
+  transform: translateY(-50%);
+}
+
+.toggler {
+  height: 23.5px;
+  width: 23.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0.52, -0.4, 0.27, 1.55);
+}
+
+.outer:checked .toggler{
+  transform: translate(20px, -50%);
+}
+
+
+/*------------- To-Do Container -----------*/
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+
+.todo-app{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2{
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-app img{
+  width: 30px;
+  margin-left: 10px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 40px 40px 0;
+}
+
+ul li{
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  text-justify: inter-word;
+  list-style: none;
+  font-size: 15px;
+  padding: 14px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 8px;
+}
+
+ul li.checked{
+  color: #8c8787;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  background-image: url(images/checked.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #7e7e7e;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #edeef0;
+}
