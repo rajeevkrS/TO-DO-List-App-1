@@ -1,7 +1,7 @@
 # TO-DO-List-App-1
 Made using HTML, CSS and Vanilla JavaScript 
 
-Live Server: https://rajeevkrs.github.io/TO-DO-List-App-1/
+Live Link: https://rajeevkrs.github.io/TO-DO-List-App-1/
 
 Theme Switcher Feature : 
 
