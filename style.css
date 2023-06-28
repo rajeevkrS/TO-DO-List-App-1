@@ -82,7 +82,7 @@
 }
 
 input{
-  flex: 1;
+  width: 100%;
   border: none;
   outline: none;
   background: transparent;
@@ -94,7 +94,7 @@ input{
 button{
   border: none;
   outline: none;
-  padding: 16px 50px;
+  padding: 16px 40px;
   background: #ff5945;
   color: #fff;
   font-size: 16px;
